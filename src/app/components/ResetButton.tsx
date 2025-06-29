@@ -1,9 +1,15 @@
 import React from 'react';
 
 interface ResetButtonProps {
+  /**
+   * リセットボタンがクリックされたときに呼び出されるコールバック関数
+   */
   onReset: () => void;
 }
 
+/**
+ * ゲームをリセットするためのボタンコンポーネント。
+ */
 const ResetButton: React.FC<ResetButtonProps> = ({ onReset }) => {
   return (
     <button
